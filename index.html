@@ -5,28 +5,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>91姐姐地址发布页</title>
+    <style>
+        .dummy-link {
+            color: #0d6efd;
+            text-decoration: underline;
+        }
+    </style>
 </head>
 
 <body>
 
     <div class="" style="display: flex; flex-direction: column;justify-content: center; align-items: center;">
 
-        <h3>为防止失联，请记得将本页面加入书签！</h3>
+        <h3>为防止失联，请记得（Ctrl + D）将本页面加入书签！</h3>
 
         <p class="">
             👋 当前最新地址：
-            <a href="https://91姐姐.xyz" class="">91姐姐.xyz</a>（可自动跳转能够访问的地址）
+            <span class="dummy-link">https://91姐姐.xyz</span>（可自动跳转能够访问的地址）
         </p>
 
-         <p class="">
-            👀 备用地址1：
-            <a href="https://p1.591yue.xyz" class="">https://p1.591yue.xyz</a>
-        </p>
-
-        
         <p class="">
-            👀 备用地址2：
-            <a href="https://591jiejie.com" class="">https://591jiejie.com (海外永久地址)</a>
+            👀 备用地址1：
+            <span class="dummy-link">https://p1.591yue.xyz</span>
+        </p>
+
+
+        <p class="">
+            👀 海外永久地址：
+            <span class="dummy-link">https://591jiejie.com</span>
         </p>
 
 
@@ -36,22 +42,27 @@
         <p>
             遇到QQ或者微信打不开上面链接的，请复制到系统默认浏览器打开。
         </p>
-        
-        <!-- <p class="">
-        🌱 官方twitter账号：https://twitter.com/x91jiejie
-    </p> -->
 
         <p class="">
-            💞️ 官方 飞机✈️频道：
-            <a href="https://t.me/+a0j0UqnZ0nMwMDhk" class="">https://t.me/+a0j0UqnZ0nMwMDhk</a>
+            💞️ 官方 电报✈️频道：
+            <span class="dummy-link">https://t.me/+a0j0UqnZ0nMwMDhk</span>
         </p>
 
         <p class="">
-            ⌚️ 更新时间：2024-09-13
+            ⌚️ 更新时间：2024-09-28
         </p>
 
     </div>
+    <script>
+        var dummyLinks = document.querySelectorAll('.dummy-link');
+        dummyLinks.forEach(function (link) {
+            link.addEventListener('click', function (event) {
+                var url = this.textContent.trim();
+                window.location.href = url;
+            });
+        });
 
+    </script>
 </body>
 
 </html>
